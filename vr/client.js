@@ -4,16 +4,25 @@
 
 // Auto-generated content.
 import { VRInstance } from 'react-vr-web';
+import NativeTest from './native-test';
 
 import GazeRaycaster from './gaze-raycaster';
+import TerminalReceiver from '../terminal_server/client';
+
+const terminalReceiver = new TerminalReceiver();
+terminalReceiver.createTerminal();
+
+const nativeTest = new NativeTest();
 
 function init(bundle, parent, options) {
   const vr = new VRInstance(bundle, 'WelcomeToVR', parent, {
     // Add custom options here
     raycasters: [new GazeRaycaster()],
     cursorVisibility: 'visible',
+    nativeModules: [nativeTest],
     ...options,
   });
+  nativeTest._rnctx = vr.rootView.context;
   vr.render = function () {
     // Any custom behavior you want to perform on each frame goes here
   };

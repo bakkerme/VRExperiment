@@ -11,20 +11,24 @@
     "devtools": "react-devtools"
   },
   "dependencies": {
+    "dom-to-image": "^2.5.2",
+    "express": "^4.15.2",
+    "express-ws": "^3.0.0",
     "http-proxy": "^1.16.2",
+    "node-pty": "^0.6.4",
     "ovrui": "~1.0.0",
     "postprocessing": "^2.1.2",
     "react": "~15.4.1",
     "react-native": "~0.42.0",
     "react-vr": "~1.0.0",
     "react-vr-web": "~1.0.0",
-    "three": "^0.80.1"
+    "three": "^0.80.1",
+    "xterm": "^2.5.0"
   },
   "devDependencies": {
     "babel-jest": "^19.0.0",
     "babel-preset-react-native": "^1.9.1",
     "jest": "^19.0.2",
-    "react-devtools": "^2.0.12",
     "react-test-renderer": "~15.4.1",
     "xopen": "1.0.0"
   },

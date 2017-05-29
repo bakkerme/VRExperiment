@@ -7,7 +7,7 @@ export default class NativeTest extends Module {
 
   constructor() {
     super('NativeTest');
-    this.node = document.getElementById('test');
+    this.node = document.getElementById('terminal-container');
   }
 
   $capture(success) {

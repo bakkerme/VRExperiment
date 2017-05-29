@@ -27,14 +27,14 @@ export default class Scene1 extends React.Component {
   }
 
   componentDidMount() {
-    // setInterval(() => {
-    //   const capture = nativeTest.capture();
-    //   capture.then((val) => {
-    //     this.setState({
-    //       imageUrl: val
-    //     });
-    //   })
-    // }, 1);
+    setInterval(() => {
+      const capture = nativeTest.capture();
+      capture.then((val) => {
+        this.setState({
+          imageUrl: val
+        });
+      })
+    }, 100);
 
   }
 
@@ -47,10 +47,10 @@ export default class Scene1 extends React.Component {
             <Image
               source={{ uri: this.state.imageUrl }}
               style={{
-                width: 1.5,
-                height: .5,
+                width: 14.5,
+                height: 10.5,
                 transform: [
-                  { translate: [0, 0, -5] },
+                  { translate: [-5, 0, -10] },
                 ]
               }}
             />

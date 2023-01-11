@@ -15,7 +15,7 @@
     "express": "^4.15.2",
     "express-ws": "^3.0.0",
     "http-proxy": "^1.16.2",
-    "node-pty": "^0.6.4",
+    "node-pty": "^0.10.1",
     "ovrui": "~1.0.0",
     "postprocessing": "^2.1.2",
     "react": "~15.4.1",
